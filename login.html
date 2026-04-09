@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart PPSU Jakarta</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <h1>SMART PPSU</h1>
+    <p class="tagline">Autentikasi Petugas PPSU Jakarta</p>
+
+    <!-- LOGIN -->
+    <form id="loginForm" action="login.php" method="POST">
+      <div class="input-group">
+        <input type="text" name="nikname" required>
+        <label>Nikname</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+
+      <button type="submit">Masuk</button>
+    </form>
+
+    <p class="switch">
+      Belum punya akun?
+      <span onclick="showRegister()">Daftar</span>
+    </p>
+
+    <!-- REGISTER -->
+    <form id="registerForm" action="register.php" method="POST" class="hidden">
+      <div class="input-group">
+        <input type="text" name="nikname" required>
+        <label>Nikname</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+
+      <button type="submit">Daftar akun</button>
+    </form>
+
+    <p class="switch hidden" id="backLogin">
+      Sudah punya akun?
+      <span onclick="showLogin()">Login</span>
+    </p>
+
+  </div>
+</div>
+
+<script>
+const loginForm = document.getElementById("loginForm");
+const registerForm = document.getElementById("registerForm");
+const backLogin = document.getElementById("backLogin");
+
+function showRegister() {
+  loginForm.classList.add("hidden");
+  registerForm.classList.remove("hidden");
+  backLogin.classList.remove("hidden");
+}
+
+function showLogin() {
+  loginForm.classList.remove("hidden");
+  registerForm.classList.add("hidden");
+  backLogin.classList.add("hidden");
+}
+</script>
+
+</body>
+</html>

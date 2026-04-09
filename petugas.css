@@ -1,0 +1,100 @@
+/* ================= FORM LAPORAN ================= */
+.form-laporan {
+  background: white;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-laporan h3 {
+  color: #ff7a00;
+  margin-bottom: 15px;
+}
+
+.form-laporan input,
+.form-laporan textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-laporan input:focus,
+.form-laporan textarea:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 8px rgba(255,122,0,0.2);
+}
+
+.form-laporan button {
+  background: linear-gradient(135deg, #ff7a00, #ff9a3c);
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-laporan button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255,122,0,0.3);
+}
+
+
+/* ================= DATA LAPORAN ================= */
+.data-laporan {
+  margin: 20px;
+}
+
+.data-laporan h3 {
+  color: #ff7a00;
+  margin-bottom: 15px;
+}
+
+.laporan-item {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.laporan-item:hover {
+  transform: translateY(-4px);
+}
+
+.laporan-item h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.laporan-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* tombol */
+.laporan-actions a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 8px;
+  color: white;
+}
+
+.btn-edit {
+  background: #4CAF50;
+}
+
+.btn-hapus {
+  background: #e53935;
+}
